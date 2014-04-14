@@ -17,7 +17,7 @@ describe GalleryTickets::Connect do
       # response = Httparty.get('http://arts-api.herokuapp.com/galleries')
       # result = JSON.parse(response.body)
       # Httparty.get("http://arts-api.herokuapp.com/galleries").parsed_response
-      # mmmmm
+      
     end
 
     it "lists the galleries" do
