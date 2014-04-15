@@ -21,7 +21,11 @@ describe GalleryTickets::Tickets do
 
     end  
 
-    # HTTParty.post("http://arts-api.herokuapp.com/tickets", body: {ticket: {name: "Angela", exhibition_id: 1, entry_at: "23/5/2014 15:00" }})
+    it "deletes a specific ticket" do
+      HTTParty.should_receive(:delete).with('http://arts-api.herokuapp.com/tickets/1')
+      GalleryTickets::Tickets.delete_tickets(1)
+    end
+
 
   end
 end

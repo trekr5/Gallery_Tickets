@@ -11,6 +11,11 @@ module GalleryTickets
     JSON.parse response.body
     end 
 
+    def self.delete_tickets(id)
+    response = HTTParty.delete("http://arts-api.herokuapp.com/tickets/#{id}")
+
+    end 
+
 
   end
 end
