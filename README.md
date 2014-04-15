@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # GalleryTickets
 
 TODO: Write a gem description
@@ -28,9 +27,3 @@ TODO: Write usage instructions here
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create a new Pull Request
-=======
-Gallery_Tickets
-===============
-
-A gem that can set up the API connection and control HTTP requests / JSON parsing
->>>>>>> e8fc7edda152989d0b04973940ac92afa0d08880
