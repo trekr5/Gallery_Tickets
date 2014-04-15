@@ -6,10 +6,10 @@ require 'gallery_tickets/version'
 Gem::Specification.new do |spec|
   spec.name          = "gallery_tickets"
   spec.version       = GalleryTickets::VERSION
-  spec.authors       = ["Teja Kocjancic"]
+  spec.authors       = ["Teja Kocjancic", "Angela Ebirim"]
   spec.email         = ["teja.kocjancic@fundingcircle.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = %q{Connects to an API}
+  spec.description   = %q{Connects to an API}
   spec.homepage      = ""
   spec.license       = "MIT"
 
