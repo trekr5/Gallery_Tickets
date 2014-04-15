@@ -18,7 +18,36 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Galleries
+=========
+
+To get all galleries:
+
+GalleryTickets::Connect.galleries
+
+To get a specific gallery:
+
+GalleryTickets::Connect.single_gallery
+
+Exhibitions
+===========
+
+To get all exhibitions at a particular gallery:
+
+GalleryTickets::Connect.exhibitions
+
+Tickets
+=======
+
+To create a ticket:
+
+GalleryTickets::Tickets.create_tickets
+
+To delete a specific ticket:
+
+GalleryTickets::Tickets.delete_tickets
+
+
 
 ## Contributing
 
