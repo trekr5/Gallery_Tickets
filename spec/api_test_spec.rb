@@ -31,13 +31,13 @@ describe GalleryTickets::Connect do
     let(:response) { double('response', body: '{"name": "Hayward"}')}
 
     it "make request to the right end point" do
-      HTTParty.should_receive(:get, :with => 'http://arts-api.herokuapp.com/galleries/1').and_return(response)
-      GalleryTickets::Connect.single_gallery
+      HTTParty.should_receive(:get, :with => 'http://arts-api.herokuapp.com/galleries/2').and_return(response)
+      GalleryTickets::Connect.single_gallery(2)
     end
 
     it "returns information for a specific gallery" do
       HTTParty.stub(get: response)
-      GalleryTickets::Connect.single_gallery.should eq('name' => "Hayward")
+      GalleryTickets::Connect.single_gallery(1).should eq('name' => "Hayward")
     end
   end
 

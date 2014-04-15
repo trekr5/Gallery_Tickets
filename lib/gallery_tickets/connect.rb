@@ -11,9 +11,9 @@ module GalleryTickets
     JSON.parse response.body
     end 
 
-    def self.single_gallery
+    def self.single_gallery(id)
       
-    response = HTTParty.get("http://arts-api.herokuapp.com/galleries/1")
+    response = HTTParty.get("http://arts-api.herokuapp.com/galleries/#{id}")
     puts response
 
      
