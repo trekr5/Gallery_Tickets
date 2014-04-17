@@ -8,6 +8,9 @@ module GalleryTickets
     puts response
 
       # returns a list of tickets
+      #  @result = HTTParty.post(@url.to_str, :body => {:ticket => {:name => 'Angela', :exhibition_id => 1, :entry_at => '17/4/2014 14:00'}})
+      # also returns the same result
+      
     JSON.parse response.body
     end 
 
